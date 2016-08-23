@@ -1,6 +1,7 @@
+<%= render 'header' %>
 <h1>Listing articles</h1>
-<%= link_to 'New article', new_article_path %>
-<table>
+<button class="btn btn-primary"><%= link_to 'New article', new_article_path %></button>
+<table class="table table-responsive table-hover">
 	<tr>
 		<th>Title</th>
 		<th>Text</th>
@@ -16,3 +17,4 @@
 		</tr>
 	<% end %>
 </table>
+<%= render 'footer' %>
